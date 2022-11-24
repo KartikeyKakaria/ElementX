@@ -1,0 +1,43 @@
+.details{
+    height:40vw;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}.error{
+    text-align:center;
+    color:white;
+    font-size:2rem;
+    display:flex;
+    justify-content:center;
+}
+#symbol{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    color:white;
+    background-color:blue;
+    text-align:center;
+    margin:10px;
+}
+#symbol h1{
+    position:relative;
+    top:30%;
+}
+#symbol span{
+    position:absolute;
+    top:-25%;
+    right:20%;
+    font-size:01rem;
+}
+#symbol sub{
+    position:absolute;
+    bottom:-50%;
+    right:10%;
+    font-size:01rem;
+}
