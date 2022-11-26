@@ -20,7 +20,7 @@ async function displayData() {
     if (element.hasOwnProperty("symbol")) {
         //display symbol
         symbol.style.display = "block";
-        symbol.innerHTML = `<h1><span>${element.atomicNumber}</span>${element.symbol}<sub>${Math.floor(Number(element.atomicMass[0] ||element.atomicMass.slice(0,-3)))}</sub></h1>`;
+        symbol.innerHTML = `<h1><span>${element.atomicNumber}</span>${element.symbol}<sub>${Math.floor(Number(element.atomicMass.slice(0,-3)|| element.atomicMass[0]))}</sub></h1>`;
 
         //display details
         const detail = document.getElementById("detail")
