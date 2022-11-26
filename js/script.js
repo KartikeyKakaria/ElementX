@@ -23,9 +23,12 @@ async function displayData() {
         symbol.innerHTML = `<h1><span>${element.atomicNumber}</span>${element.symbol}<sub>${Math.floor(Number(element.atomicMass[0] ||element.atomicMass.slice(0,-3)))}</sub></h1>`;
 
         //display details
-        const details = document.getElementById("detail")
-        details.innerHTML = `<ul><li>Name:${element.name}</li><li>Atomic Number:${element.atomicNumber}</li><li>Atomic Mass:${Math.floor(Number(element.atomicMass[0] ||element.atomicMass.slice(0,-3)))}</li><li>Year discovered:${element.yearDiscovered}</li><ul>`
+        const detail = document.getElementById("detail")
+        detail.innerHTML = `<ul><li>Name:${element.name}</li><li>Atomic Number:${element.atomicNumber}</li><li>Atomic Mass:${Math.floor(Number(element.atomicMass[0] ||element.atomicMass.slice(0,-3)))}</li><li>Year discovered:${element.yearDiscovered}</li><ul>`
+    
     }
-    console.log(element)
+    else{
+       swal("Element Not Found", "Please enter a correct element name","error")
+    }
 }
 document.getElementById("submit").addEventListener("click", displayData)
