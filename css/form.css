@@ -9,9 +9,15 @@
     width:100%;
     background-image:linear-gradient(to bottom right, #080F1B, #0C182C);
 }
+.form h1{
+    font-size:2rem;
+    color:white;
+}
 .form{
     display:flex;
     flex-direction:column;
+    padding-top:20px;
+    padding-bottom:15px;
     height:30vh;
     width:100%;
     justify-content:center;
